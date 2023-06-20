@@ -599,7 +599,7 @@ export class Auth<_Configuration extends Configuration = any> {
 			middleware({
 				args,
 				env: this.env,
-				cookieName: this.sessionCookieName
+				sessionCookieName: this.sessionCookieName
 			})
 		);
 	};

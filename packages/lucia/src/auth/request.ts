@@ -21,7 +21,7 @@ export type RequestContext = {
 export type Middleware<Args extends any[] = any> = (context: {
 	args: Args;
 	env: Env;
-	cookieName: string;
+	sessionCookieName: string;
 }) => RequestContext;
 
 export class AuthRequest<A extends Auth = any> {
